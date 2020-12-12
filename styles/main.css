@@ -170,6 +170,17 @@
     text-align: right;
     min-width: 10rem;
 }
+#sing_in::before{
+    
+    bottom: 0.1rem;
+}
+
+
+
+
+
+
+
 #news:hover::before{
     background-color: red;
 }
