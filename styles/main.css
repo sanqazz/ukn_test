@@ -145,117 +145,88 @@
 }
 
 
-.navbar {
-position: relative;
-height: 2rem;
-border: 1px solid transparent;
-font-family:ReithSans,Helvetica,Arial,freesans,sans-serif;
-font-weight:700;
-font-size:0.8125rem;
-line-height:2rem;
+/* NAVBAR */
+/* .navbar {
+
+} */
+
+.styled_nav{
+    /* position: relative; */
+    border: 1px solid transparent;
+    font-family:ReithSans,Helvetica,Arial,freesans,sans-serif;
+    font-weight:700;
+    font-size:0.8125rem;
+    margin-top: 0;;
+    height: 2.5rem;
+}
+#sing_in{
+    border-left: 0.05rem solid black;
+    min-width: 10rem;
+}
+#sing_in:hover::before, #home:hover::before{
+    background-color: rgb(1, 113, 241);
+}
+#sing_in > span{
+    text-align: right;
+    min-width: 10rem;
+}
+#news:hover::before{
+    background-color: red;
+}
+#sport:hover::before{
+    background-color: orange;
+}
+#reel:hover::before{
+    background-color: skyblue;
+}
+#worklife:hover::before{
+    background-color: darkblue;
+}
+#travel:hover::before{
+    background-color: lightgreen;
+}
+#future:hover::before{
+    background-color: darkslateblue;
 }
 
-.nav-link{
-    color: black;
-    padding: 0;
-    border-bottom: 0.25rem solid transparent;
+.styled_item{
+    border-right: 0.05rem solid black;
 }
 
-.nav_global_elem a:hover{
-    border-bottom-color: darkslategrey;
-    border-bottom-style: solid;
-}
 
-#sing_in:hover, #home:hover{
-    border-bottom-color: rgb(1, 113, 241);
-}
-#news:hover{
-    border-bottom-color: red;
-}
-#sport:hover{
-    border-bottom-color: orange;
-}
-#reel:hover{
-    border-bottom-color: skyblue;
-}
-#worklife:hover{
-    border-bottom-color: darkblue;
-}
-#travel:hover{
-    border-bottom-color: lightgreen;
-}
-#future:hover{
-    border-bottom-color: darkslateblue;
-}
+.styled_link{
+    display: flex;
+    justify-content: center;
+    color:black !important;
+    text-decoration:none;
+    position: relative;
+    /* width: 6rem; */
+}   
 
-.nav_global_elem{
-    border-right: 0.05rem solid grey;
-    width: 6rem;
-    text-align: center;
-}
-.nav_global_elem a{
-    color: black !important;
-}
-
-.naw_down_news{
-    margin-top: 0.175rem;
-    color: white;
-
-}
-
-.news_ancor{
-    margin: 0;
+.styled_text{
+    padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
 
-.news_ancor a{
-    text-decoration: none;
-    color: white;
-    font-size: 3rem;
-}
-
-.nav_down{
-    margin-top: 0.05rem;
-    color: white;
-}
-
-
-
-.nav_local_elem > a{
-    color: white !important;
-}
-
-.bbc_logo:hover{
-    border-bottom-style: none !important;
-}
-
-.nav_local_elem{
-    border-right: 1px solid white;
-    text-align: center;
-    line-height: 0.75rem;
-    /* padding-bottom: 1rem; */
-}
-
-
-
-.nav_local_elem:hover::after{
+.styled_link:hover::before{
     content: '';
-}
-
-.nav_local_elem::after{
-
-    background-color: yellow;
-    width: 100%;
+    width: 100% ;
     height: 0.25rem;
-  
+    background-color: darkgrey;
+    line-height: 0rem;
+}
+
+.styled_link::before{
+    content: none;
+    background-color:#B80000;
+    width: 0.25rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
 }
 
 
-
-/* .nav_local_elem a:hover{
-    border-bottom-color: white;
-    border-bottom-style: solid;
- } */
 
 .strech{
     max-width: 100vw;
