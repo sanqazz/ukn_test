@@ -11,72 +11,72 @@
 <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light styled_nav">
         <div class="container-fluid">
-            
-            <a class="navbar-brand" href="https://www.bbc.com">
-                <img src="bbc_logo.svg" alt="BBC Logo">
-            </a>
-
+            <div class="d-flex justify-content-end w-100">
+                <a class="navbar-brand" href="https://www.bbc.com">
+                    <img src="bbc_logo.svg" alt="BBC Logo">
+                </a>
+             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mb-2 mb-lg-0 w-100 justify-content-center styled_nav">
+            <div class="collapse_navbar" id="navbarTogglerDemo02">
+                <ul class="styled_nav">
 
                     <li class="nav-item styled_item">
-                        <a class="nav-link styled_link" id="sing_in" href="#">
+                        <a class="styled_link" id="sing_in" href="#">
                             <img src="sing_in.svg" alt="BBC Logo">
                             <span class="styled_text">Sing in</span>
                         </a>
                     </li>
                     <li class="nav-item styled_item">
-                        <a class="nav-link styled_link" id="home" href="#">
+                        <a class="styled_link" id="home" href="#">
                             <span class="styled_text">Home</span>
                         </a>
                     </li>
                     <li class="nav-item styled_item">
-                        <a class="nav-link styled_link" id="news" href="#">
+                        <a class="styled_link" id="news" href="#">
                             <span class="styled_text">News</span>
                         </a>
                     </li>
                     <li class="nav-item styled_item">
-                        <a class="nav-link styled_link" id="sport" href="#">
+                        <a class="styled_link" id="sport" href="#">
                             <span class="styled_text">Sport</span>
                         </a>
                     </li>
                     <li class="nav-item styled_item">
-                        <a class="nav-link styled_link" id="reel" href="#">
+                        <a class="styled_link" id="reel" href="#">
                             <span class="styled_text">Reel</span>
                         </a>
                     </li>
                     <li class="nav-item styled_item">
-                        <a class="nav-link styled_link" id="worklife" href="#">
+                        <a class="styled_link" id="worklife" href="#">
                             <span class="styled_text">Worklife</span>
                         </a>
                     </li>
                     <li class="nav-item styled_item">
-                        <a class="nav-link styled_link" id="travel" href="#">
+                        <a class="styled_link" id="travel" href="#">
                             <span class="styled_text">Travel</span>
                         </a>
                     </li>
                     <li class="nav-item styled_item">
-                        <a class="nav-link styled_link" id="future" href="#">
+                        <a class="styled_link" id="future" href="#">
                             <span class="styled_text">Future</span>
                         </a>
                     </li>
                     <li class="nav-item styled_item">
-                        <a class="nav-link styled_link" id="culture" href="#">
+                        <a class="styled_link" id="culture" href="#">
                             <span class="styled_text">Culture</span>
                         </a>
                     </li>
                     <li class="nav-item styled_item">
-                        <a class="nav-link styled_link" id="travel" href="#">
+                        <a class="styled_link" id="travel" href="#">
                             <span class="styled_text">Travel</span>
                         </a>
                     </li>
 
                     <li class="nav-item dropdown styled_item">
-                        <a class="nav-link dropdown-toggle styled_link" href="#" id="more" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a class="dropdown-toggle styled_link" href="#" id="more" role="button" data-toggle="dropdown" aria-expanded="false">
                         <span class="styled_text">More</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="more">
@@ -90,37 +90,90 @@
 
         </div>
       </nav>
-      <div class="strech">
-        <div class="container naw_down_news">
-            <div class="news_ancor"><a href="https://bbc.com/news">NEWS</a></div>
-       
-        </div>
-        <hr>
-        <nav class="container navbar navbar-expand-lg navbar-light nav_down">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-start" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <div class="nav_local_elem"><a class="nav-link" href="#">Home</a></div>
-                    <div class="nav_local_elem"><a class="nav-link" href="#">Coronavirus</a></div>
-                    <div class="nav_local_elem"><a class="nav-link" href="#">Video</a></div>
-                    <div class="nav_local_elem"><a class="nav-link" href="#">World</a></div>
-                    <div class="nav_local_elem"><a class="nav-link" href="#">UK</a></div>
-                    <div class="nav_local_elem"><a class="nav-link" href="#">Business</a></div>
-                    <div class="nav_local_elem"><a class="nav-link" href="#">Tech</a></div>
-                    <div class="nav_local_elem"><a class="nav-link" href="#">Scince</a></div>
-                    <div class="nav_local_elem"><a class="nav-link" href="#">Stories</a> </div>     
-                    <div class="nav_local_elem"><a class="nav-link" href="#">Entertainment & Arts</a></div>
-                    <div class="nav_local_elem"><a class="nav-link" href="#">Health</a></div>
-                </div>
+
+    <div class="navigation_container">
+        <div class="news_header">
+            <div class="news_header_wrapper">
+                <a href="https://bbc.com/news">
+                    <img class="news_img" src="news_logo.svg" alt="News">
+                </a>
             </div>
-        </nav> 
+            <hr>
+            <div class="mainnav">
+                <nav class="styled_nav">
+                    <div class="mainnav_container">
+           
+                        <div class="collapse_navbar" id="navbarTogglerDemo02">
+                            <ul class="styled_nav">
+            
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text first_elem">Home</span>
+                                    </a>
+                                </li>
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text">Coronavirus</span>
+                                    </a>
+                                </li>
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text">Video</span>
+                                    </a>
+                                </li>
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text">World</span>
+                                    </a>
+                                </li>
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text">UK</span>
+                                    </a>
+                                </li>
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text">Business</span>
+                                    </a>
+                                </li>
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text">Tech</span>
+                                    </a>
+                                </li>
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text">Scince</span>
+                                    </a>
+                                </li>
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text">Stories</span>
+                                    </a>
+                                </li>
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text">Stories</span>
+                                    </a>
+                                </li>
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text">Entertainment & Arts</span>
+                                    </a>
+                                </li>
+                                <li class="styled_item">
+                                    <a class="styled_link" href="#">
+                                        <span class="styled_text">Health</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </div>
 
-
-
- 
 
 
 
