@@ -5,78 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <link href="./fonts/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
     <title>Document</title>
 </head>
 <body>
 <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light styled_nav">
-        <div class="container-fluid">
-            <div class="d-flex justify-content-end w-100">
-                <a class="navbar-brand" href="https://www.bbc.com">
+    <nav class="global_nav">
+            <div class="brand">
+                <a class="navbar_brand" href="https://www.bbc.com">
                     <img src="bbc_logo.svg" alt="BBC Logo">
                 </a>
              </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse_navbar" id="navbarTogglerDemo02">
+             <div class="collapse_navbar">
                 <ul class="styled_nav">
 
-                    <li class="nav-item styled_item">
-                        <a class="styled_link" id="sing_in" href="#">
-                            <img src="sing_in.svg" alt="BBC Logo">
+                    <li class="styled_item">
+                        <a class="styled_link" id="sign_in" href="#">
+                            <img src="sign_in.svg" alt="BBC Logo">
                             <span class="styled_text">Sing in</span>
                         </a>
                     </li>
-                    <li class="nav-item styled_item">
+                    <li class="styled_item">
                         <a class="styled_link" id="home" href="#">
                             <span class="styled_text">Home</span>
                         </a>
                     </li>
-                    <li class="nav-item styled_item">
+                    <li class="styled_item">
                         <a class="styled_link" id="news" href="#">
                             <span class="styled_text">News</span>
                         </a>
                     </li>
-                    <li class="nav-item styled_item">
+                    <li class="styled_item">
                         <a class="styled_link" id="sport" href="#">
                             <span class="styled_text">Sport</span>
                         </a>
                     </li>
-                    <li class="nav-item styled_item">
+                    <li class="styled_item">
                         <a class="styled_link" id="reel" href="#">
                             <span class="styled_text">Reel</span>
                         </a>
                     </li>
-                    <li class="nav-item styled_item">
+                    <li class="styled_item">
                         <a class="styled_link" id="worklife" href="#">
                             <span class="styled_text">Worklife</span>
                         </a>
                     </li>
-                    <li class="nav-item styled_item">
+                    <li class="styled_item">
                         <a class="styled_link" id="travel" href="#">
                             <span class="styled_text">Travel</span>
                         </a>
                     </li>
-                    <li class="nav-item styled_item">
+                    <li class="styled_item">
                         <a class="styled_link" id="future" href="#">
                             <span class="styled_text">Future</span>
                         </a>
                     </li>
-                    <li class="nav-item styled_item">
+                    <li class="styled_item">
                         <a class="styled_link" id="culture" href="#">
                             <span class="styled_text">Culture</span>
                         </a>
                     </li>
-                    <li class="nav-item styled_item">
-                        <a class="styled_link" id="travel" href="#">
-                            <span class="styled_text">Travel</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item dropdown styled_item">
-                        <a class="dropdown-toggle styled_link" href="#" id="more" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <li class="dropdown styled_item">
+                        <a class="dropdown_toggle styled_link" href="#" id="more">
                         <span class="styled_text">More</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="more">
@@ -85,16 +78,20 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
+                    <li class="styled_item">
+                        <a class="styled_link" id="travel" href="#">
+                            
+                            <span class="styled_text"><span class="search_icon"><i class="fas fa-search"></i></span>Search</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
-
-        </div>
       </nav>
 
-    <div class="navigation_container">
+    <div class="local_nav">
         <div class="news_header">
             <div class="news_header_wrapper">
-                <a href="https://bbc.com/news">
+                <a href="#">
                     <img class="news_img" src="news_logo.svg" alt="News">
                 </a>
             </div>
@@ -171,9 +168,29 @@
                     </div>
                 </nav>
             </div>
+            
         </div>
     </div>
-
+    <div class="sub_mainnav">
+        <nav class="styled_nav">
+            <div class="sub_mainnav_container">
+                <div class="collapse_navbar">
+                    <ul class="styled_nav">
+                        <li class="styled_item">
+                            <a class="styled_link" href="#">
+                                <span class="styled_text first_elem">Health</span>
+                            </a>
+                        </li>
+                        <li class="styled_item">
+                            <a class="styled_link" href="#">
+                                <span class="styled_text">Coronavirus</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
 
 
@@ -186,74 +203,30 @@
 
 <div class="content">
     <div class="main_content">
-
+        <article>
+            <h1>Covid-19: Pfizer/BioNTech vaccine judged safe for use in UK</h1>
+            <p>
+                <span>
+                    <strong>By Michelle Roberts</strong>
+                    <br>
+                    Health editor, BBC News online
+                </span>
+            </p>
+            <p><i class="far fa-clock"></i> 2 December</p>
+            <div>
+                <p><i class="fas fa-share-alt share_icon"></i> <span>Coronavirus pandemic</span></p>
+            </div>
+        </article>
     </div>
-    <div class="side_bar">
 
+    <div class="sidebar">
+        <hr>
+        <div class="top_stories">
+            <p>Top Stories</p>
+        </div>
+        SIDEBAR
     </div>
 </div>
-
-<!-- <div class="container">
-    <header>
-        <nav class="nav_global">
-            <div class="nav_container">
-                <ul class="navbar_topmenu">
-                    <li><a id = 'home_link' href="#">Sign in</a></li><li class="divider"></li>
-                    <li><a id = 'home_link' href="#">Home</a></li><li class="divider"></li>
-                    <li><a id = 'home_link' href="#">News</a></li><li class="divider"></li>
-                    <li><a id = 'home_link' href="#">Sport</a></li><li class="divider"></li>
-                    <li><a id = 'home_link' href="#">Reel</a></li><li class="divider"></li>
-                    <li><a id = 'home_link' href="#">Worklife</a></li><li class="divider"></li>
-                    <li><a id = 'home_link' href="#">Travel</a></li><li class="divider"></li>
-                    <li><a id = 'home_link' href="#">Future</a></li><li class="divider"></li>
-                    <li><a id = 'home_link' href="#">Culture</a></li><li class="divider"></li>
-                    <li><a id = 'home_link' href="#">More</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav class="nav_local">
-            <div class="nav_container">
-                <div>
-                    <div class="сontentWrapper">
-                        <a href="https://bbc.com/news" class="logoLink">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 15.33" class="logo" role="presentation" preserveAspectRatio="xMinYMid meet" focusable="false" aria-hidden="true">
-                                <path d="M11.83 .19h2.03v14.97h-1.84l-10.01-11.53v11.53h-2.01V.19h1.74l10.09 11.62V.19M17.72 .19h8.49v1.91h-6.34v4.56h6.13v1.92h-6.13v4.65h6.54v1.9h-8.69V.19M49.07 .19h2.14l-6.05 15.03h-.47l-4.89-12.17l-4.95 12.17h-.46l-6.03,-15.03h2.16l4.12 10.32 4.16-10.32h2.02l4.17 10.32 4.08-10.32M57.02 8.89l-1.63-.99c-1.02-.62-1.75-1.24-2.18-1.84-.43-.6-.65-1.3-.65-2.08 0-1.18.41-2.14 1.23-2.87.82-.74 1.88-1.1 3.19-1.1 1.25 0 2.4.35 3.44 1.05v2.43c-1.08-1.04-2.24-1.56-3.48-1.56-.7 0-1.27.16-1.73.49-.45.32-.67.74-.67 1.24 0 .45.17.87.5 1.26.33.39.86.8 1.6 1.23l1.64.97c1.82 1.09 2.74 2.48 2.74 4.16 0 1.2-.4 2.17-1.21 2.92-.8.75-1.85 1.12-3.13 1.12-1.48 0-2.82-.45-4.04-1.36V11.24c1.16 1.47 2.5 2.2 4.02 2.2.67 0 1.23-.19 1.68-.56.45-.37.67-.84.67-1.4-.02-.91-.68-1.78-1.99-2.59"></path>
-                            </svg>
-                            <span class="visuallyHidden">BBC News</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="nav_container">
-                
-                <ul class="navbar_downmenu">
-                    <li><a id = 'home_link' href="#">Home</a></li>
-                    <li><a id = 'home_link' href="#">Coronavirus</a></li>
-                    <li><a id = 'home_link' href="#">Video</a></li>
-                    <li><a id = 'home_link' href="#">World</a></li>
-                    <li><a id = 'home_link' href="#">UK</a></li>
-                    <li><a id = 'home_link' href="#">Business</a>
-                    <li><a id = 'home_link' href="#">Tech</a></li>
-                    <li><a id = 'home_link' href="#">Scince</a></li>
-                    <li><a id = 'home_link' href="#">Stories</a></li>
-                    <li><a id = 'home_link' href="#">Entertainment & Arts</a></li>
-                    <li><a id = 'home_link' href="#">Health</a></li>
-                </ul>
-            </div>
-        </nav>
-        
-    </header>
-    <div>
-
-    </div>
-</div> -->
-
-
-
-
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
