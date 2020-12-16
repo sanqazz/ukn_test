@@ -166,11 +166,43 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="more_container">
+                        <ul class="styled_nav">
+                            <li class="styled_item">
+                                <a class="styled_link" onclick="showMore()">
+                                    <span class="styled_text more_button"><i class="fas fa-grip-lines"></i>More</span>
+                                </a>
+                            </li>
+                         </ul>
+                    </div>
+
                 </nav>
             </div>
             
         </div>
     </div>
+    <div id="show_more">
+        <div class="show_more_wrapper">
+            <ul class="more_link_list">
+                <li class="more_list_item">
+                    <a href="">World News TV</a>
+                </li>
+                <li class="more_list_item">
+                    <a href="">In Pictures</a>
+                </li>
+                <li class="more_list_item">
+                    <a href="">Reality Check</a>
+                </li>
+                <li class="more_list_item">
+                    <a href="">Newsbeat</a>
+                </li>
+                <li class="more_list_item">
+                    <a href="">Long Reads</a>
+                </li>
+            </ul>
+         </div>
+    </div>
+
     <div class="sub_mainnav">
         <nav class="styled_nav">
             <div class="sub_mainnav_container">
@@ -623,14 +655,234 @@
         </article>
     </div>
 
+
+<!-- SIDEBAR -->
     <div class="sidebar">
         <hr>
-        <div class="top_stories">
+        <div class="section_header">
             <p>Top Stories</p>
         </div>
-        SIDEBAR
+        <ul>
+            <li class="promo_item">
+                <p class="promo_headline">
+                    <a href="/news/health-54873105" class="promo_link">
+                        <span>Germany under tougher restrictions amid Covid rise</span>
+                    </a>
+                </p>
+                <p>The country closes schools and non-essential businesses in an attempt to curb the virus.</p>
+                <div>
+                    <span class="metadata_snippet">
+                        <span><i class="far fa-clock"></i> 15 minutes ago</span>
+                    </span>
+                </div>
+            </li>
+            <li class="promo_item">
+                <p class="promo_headline">
+                    <a href="/news/health-54873105" class="promo_link">
+                        <span>MacKenzie Scott gives away $4.2bn in four months</span>
+                    </a>
+                </p>
+                <div>
+                    <span class="metadata_snippet">
+                        <span><i class="far fa-clock"></i> 3 hours ago</span>
+                    </span>
+                </div>
+            </li>
+            <li class="promo_item">
+                <p class="promo_headline">
+                    <a href="/news/health-54873105" class="promo_link">
+                        <span>Top Trump ally ends silence to congratulate Biden</span>
+                    </a>
+                </p>
+                <div>
+                    <span class="metadata_snippet">
+                        <span><i class="far fa-clock"></i> 9 hours ago</span>
+                    </span>
+                </div>
+            </li>
+        </ul> 
+        <hr> 
+        <div class="section_header">
+            <p>Features</p>
+        </div>  
+            <ul>
+                <li class="promo_item">
+                    <div class="promo">
+                        <div class="promo_portrait">
+                            <div class="promo_image_container">
+                                <div class="css-jusods-PromoImageContainerInner ehnfhlg1">
+                                    <span class="placeholder">
+                                        <span>
+                                            <img alt="A small town in Italy has built its fortune on transforming old scraps into new clothes." src="./img/116068404_p091kdfk.jpg" width="317" height="178" class="image">
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="promo_content">
+                                <p class="promo_headline">
+                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link">
+                                        <span>Rags to robes: How clothes are recycled</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="promo_item">
+                    <div class="promo">
+                        <div class="promo_portrait">
+                            <div class="promo_image_container">
+                                <div class="css-jusods-PromoImageContainerInner ehnfhlg1">
+                                    <span class="placeholder">
+                                        <span>
+                                            <img alt='A poster reads "I protect you " during the local coronavirus disease (COVID-19) lockdown in Dresden, Germany, December 14, 2020' src="./img/116092075_mask2.jpg" width="317" height="178" class="image">
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="promo_content">
+                                <p class="promo_headline">
+                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link">
+                                        <span>Germans start holiday lockdown amid Covid surge</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="promo_item">
+                    <div class="promo">
+                        <div class="promo_portrait">
+                            <div class="promo_image_container">
+                                <div class="css-jusods-PromoImageContainerInner ehnfhlg1">
+                                    <span class="placeholder">
+                                        <span>
+                                            <img alt="Family sitting in a home" src="./img/116097149_p091kb7h.jpg" width="317" height="178" class="image">
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="promo_content">
+                                <p class="promo_headline">
+                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link">
+                                        <span>The Beirut architect rebuilding families' homes for free</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <hr> 
+            <div class="section_header">
+                <p>Elsewhere on the BBC</p>
+            </div>  
+            <ul>
+                <li class="promo_item">
+                    <div class="promo">
+                        <div class="promo_portrait">
+                            <div class="promo_image_container">
+                                <div class="css-jusods-PromoImageContainerInner ehnfhlg1">
+                                    <span class="placeholder">
+                                        <span>
+                                            <img alt="Michael Stipe, Jimmi Hendrix and Taylor Swift - lyrics quiz image" src="./img/102501987_lyrics-quiz.jpg" width="317" height="178" class="image">
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="promo_content">
+                                <p class="promo_headline">
+                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link">
+                                        <span>Lyrics quiz</span>
+                                    </a>
+                                </p>
+                                <p>Have you been getting these songs wrong?</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <hr> 
+            <div class="section_header">
+                <p>Most Read</p>
+            </div>  
+            <ul>
+                <li class="promo_item">
+                    <div class="promo">
+                        <div class="promo_portrait">
+                            <div class="promo_content">
+                                <p class="promo_headline">
+                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
+                                        <span>Tom Cruise: Recording emerges of star 'shouting at film crew' over Covid</span><span class="rank">1</span>
+                                        
+                                    </a>
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="promo_item">
+                    <div class="promo">
+                        <div class="promo_portrait">
+                            <div class="promo_content">
+                                <p class="promo_headline">
+                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
+                                        <span>MacKenzie Scott gives away $4.2bn in four months</span><span class="rank">2</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="promo_item">
+                    <div class="promo">
+                        <div class="promo_portrait">
+                            <div class="promo_content">
+                                <p class="promo_headline">
+                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
+                                        <span>Paris mayor mocks 'absurd' fine for hiring too many women</span><span class="rank">3</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="promo_item">
+                    <div class="promo">
+                        <div class="promo_portrait">
+                            <div class="promo_content">
+                                <p class="promo_headline">
+                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
+                                        <span>Brexit: 'Narrow path' in view for trade deal - EU chief</span><span class="rank">4</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+
+
+
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
 <footer>
     <nav class="servicebar">
         <div class="servicebar_wrapper">
@@ -769,7 +1021,15 @@
         </div>
     </div>
 </footer>
-
+    <script>
+    function showMore() {
+        if (document.getElementById('show_more').style.display == 'none'){
+            document.getElementById('show_more').style.display = 'block';
+        } else {
+        document.getElementById('show_more').style.display = 'none';
+         }
+    }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
