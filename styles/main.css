@@ -764,8 +764,14 @@ footer .styled_link{
 }
 
 @media (max-width:67.25rem){
-    #sing_in>.styled_text{
+    #sign_in{
+        width: 100%;
+    }
+    #sign_in span{
         display:none;
+    }
+    #sign_in img{
+        margin-right: 2rem;
     }
     
 }
