@@ -249,7 +249,6 @@ h2{
 
 #show_more{
     display: none;
-    height: 3.75rem;
     border-bottom: 0.25rem #B80000 solid;
 }
 
@@ -266,6 +265,8 @@ h2{
     column-count: 5;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .more_list_item{
@@ -425,7 +426,7 @@ article>header{
     background: #3F3F42;
     color: #EEEEEE;
     padding: 0.25rem 0.5rem;
-    text-transform: uppercase;
+    text-transform: upcase;
 }
 .figure_caption{
     background:#3F3F42;
@@ -743,12 +744,22 @@ footer .styled_link{
     margin-bottom: 0;
 }
 
+#health_down, #ena_down, #stories_down{
+    display: none;
+}
+
+.image { 
+    object-fit: contain;
+  }
 
 @media (max-width:80rem){
     #culture{
         display:none;
     }
-    
+    .content{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 
@@ -771,9 +782,31 @@ footer .styled_link{
         display:none;
     }
     #sign_in img{
-        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
-    
+    #health_up{
+        display: none;
+    }
+    #health_down{
+        display: block;
+    }
+
+}
+
+@media (max-width:58.75rem){
+    #travel{
+        display: none;
+    }
+}
+
+@media (max-width:57.125rem){
+    #ena_up{
+        display: none;
+    }
+    #ena_down{
+        display: block;
+    }
 }
 
 
