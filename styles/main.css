@@ -389,7 +389,10 @@ h2{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-
+article{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 article>header>div>p{
     display: flex;
     align-items: center;
@@ -757,6 +760,7 @@ footer .styled_link{
         display:none;
     }
     .content{
+        column-gap: 1rem;
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -771,6 +775,9 @@ footer .styled_link{
         grid-template-areas: 
         "main_content"
         "sidebar";
+    }
+    .sidebar{
+        margin-left: 2rem;
     }
 }
 
@@ -806,6 +813,21 @@ footer .styled_link{
     }
     #ena_down{
         display: block;
+    }
+}
+@media (max-width:54rem){
+    .content{
+        max-width: 54rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .image{
+        width: 95vw;
+        height: auto;
+    }
+    .placeholder span{
+        display: flex;
+        justify-content: center;
     }
 }
 
