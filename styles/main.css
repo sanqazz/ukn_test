@@ -264,6 +264,8 @@ h2{
     width: 100%;
     list-style-type: none; 
     column-count: 5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .more_list_item{
@@ -276,7 +278,7 @@ h2{
 .sub_mainnav{
     background-color: white;
     color: black;
-    width: 79.125rem;
+    max-width: 79.125rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -337,7 +339,7 @@ h2{
     display: grid;
     grid-template-areas: 
     "main_content . sidebar";
-    grid-template-columns: 800px 130px 315px; 
+    grid-template-columns: 65fr 10fr 25fr; 
 }
 .main_content{
     grid-area: main_content;
@@ -624,7 +626,7 @@ footer{
     fill: white;
 }
 .service_link_list{
-    min-width: 78.125rem;
+    max-width: 78.125rem;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -640,7 +642,7 @@ footer .styled_link{
 
 
 .global_footer{
-    min-width: 78.125rem;
+    max-width: 78.125rem;
     line-height: 1rem;
     padding: 1rem 0;
     background: #282828;
@@ -740,3 +742,35 @@ footer .styled_link{
     margin-right: auto;
     margin-bottom: 0;
 }
+
+
+@media (max-width:80rem){
+    #culture{
+        display:none;
+    }
+    
+}
+
+
+@media (max-width:72.85rem){
+    #future{
+        display:none;
+    }
+    .content{
+        grid-template-areas: 
+        "main_content"
+        "sidebar";
+    }
+}
+
+@media (max-width:67.25rem){
+    #sing_in>.styled_text{
+        display:none;
+    }
+    
+}
+
+
+
+
+
