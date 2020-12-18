@@ -230,6 +230,15 @@ h2{
     display: flex;
     border-left: 0.0625rem solid #DB7F7F;
 }
+.more_container_active{
+    background-color: white;
+    height: 100%;
+    
+}
+
+.more_container_active styled_text{
+    color: black;
+}
 .more_button > i{
     padding-right: 1rem;
 }
@@ -338,9 +347,11 @@ h2{
     margin-left: auto;
     margin-right: auto;
     display: grid;
+    justify-content: space-between;
+    /* column-gap: minmax(1.5rem, 10%); */
     grid-template-areas: 
     "main_content . sidebar";
-    grid-template-columns: 65fr 10fr 25fr; 
+    grid-template-columns: minmax(45rem, 50rem) minmax(1.5rem, 8rem) minmax(17.5rem, 20rem); 
 }
 .main_content{
     grid-area: main_content;
@@ -752,6 +763,8 @@ footer .styled_link{
 }
 
 .image { 
+    width: 100%;
+    height: auto;
     object-fit: contain;
   }
 
@@ -760,7 +773,7 @@ footer .styled_link{
         display:none;
     }
     .content{
-        column-gap: 1rem;
+        /* column-gap: 1rem; */
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -771,11 +784,7 @@ footer .styled_link{
     #future{
         display:none;
     }
-    .content{
-        grid-template-areas: 
-        "main_content"
-        "sidebar";
-    }
+    
     .sidebar{
         margin-left: 2rem;
     }
@@ -798,6 +807,13 @@ footer .styled_link{
     #health_down{
         display: block;
     }
+    .content{
+
+        grid-template-areas: 
+        "main_content"
+        "sidebar";
+        grid-template-columns: 1fr;
+    }
 
 }
 
@@ -805,6 +821,11 @@ footer .styled_link{
     #travel{
         display: none;
     }
+    .content{
+        margin-right: 2rem;
+    }
+    
+
 }
 
 @media (max-width:57.125rem){
@@ -814,21 +835,17 @@ footer .styled_link{
     #ena_down{
         display: block;
     }
+    .content{
+        margin-right: 2rem;
+    }
 }
 @media (max-width:54rem){
     .content{
-        max-width: 54rem;
+        max-width: 50rem;
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    .image{
-        width: 95vw;
-        height: auto;
-    }
-    .placeholder span{
-        display: flex;
-        justify-content: center;
-    }
+
 }
 
 

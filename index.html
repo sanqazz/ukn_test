@@ -79,7 +79,7 @@
                         </ul>
                     </li>
                     <li class="styled_item">
-                        <a class="styled_link" id="travel" href="#">
+                        <a class="styled_link" id="search" href="#">
                             
                             <span class="styled_text"><span class="search_icon"><i class="fas fa-search"></i></span>Search</span>
                         </a>
@@ -161,7 +161,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="more_container">
+                    <div class="more_container" id="more_container_id">
                         <ul class="styled_nav">
                             <li class="styled_item">
                                 <a class="styled_link" onclick="showMore()">
@@ -1025,10 +1025,20 @@
         </div>
     </div>
 </footer>
+
+function myFunction() {
+    var element = document.getElementById("myDIV");
+    element.classList.remove("mystyle");
+  }
     <script>
     function showMore() {
         if (document.getElementById('show_more').style.display == 'none'){
             document.getElementById('show_more').style.display = 'block';
+
+            var element = document.getElementById("more_container_id");
+            element.classList.remove("more_container");
+            element.classList.add("more_container_active");
+
         } else {
         document.getElementById('show_more').style.display = 'none';
          }
