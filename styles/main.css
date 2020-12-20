@@ -626,8 +626,10 @@ footer{
     background: #282828;
     color: #FFFFFF;
 }
-.servicebar_wrapper{
+.servicebar_wrapper, .global_footer_wrapper{
     width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .servicebar{
     display: flex;
@@ -691,10 +693,10 @@ footer .styled_link{
 
 .nav_link_list{
     list-style-type: none;
-    columns:12rem;
+    columns:6rem;
     column-rule:1px solid #717171;
     column-gap:0.5rem;
-    gap:0.5rem;
+    gap:4.5rem;
     padding-bottom:1rem;
     border-bottom:1px solid #717171;
 }
@@ -822,15 +824,19 @@ footer .styled_link{
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    
 }
+
+@media (max-width:61rem){
+    .servicebar, .global_footer{
+        width: 100%;
+    }
+}
+
 
 @media (max-width:58.75rem){
     #travel{
         display: none;
     }
-  
-
 }
 
 @media (max-width:57.125rem){
@@ -839,9 +845,6 @@ footer .styled_link{
     }
     #ena_down{
         display: block;
-    }
-    .content{
-        margin-right: 2rem;
     }
 }
 
@@ -863,6 +866,9 @@ footer .styled_link{
         max-width: 50rem;
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+    #worklife{
+        display: none;
     }
 
 }
