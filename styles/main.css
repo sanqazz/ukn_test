@@ -29,13 +29,17 @@ h2{
     justify-content: center;
 }
 /* global navbar */
-.global_nav{
-    display: flex;
-    max-width: 78.125rem;
-    flex-direction: row;
+.global_nav_wrapper{
+    width: 78rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0.1rem;
+}
+.global_nav{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 0;
 }
 
 .global_nav .styled_item{
@@ -48,7 +52,9 @@ h2{
     white-space: nowrap;
     font-size: 0.775rem;
     color: #3F3F42;
-    width: 6rem;
+    /* width: 6rem; */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     display: flex;
     justify-content: center;
     font-weight: 700;
@@ -124,7 +130,7 @@ h2{
     background-color:#b80000
 }
 .news_header_wrapper{
-    max-width: 78.125rem;
+    max-width: 78rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -343,15 +349,14 @@ h2{
 /* content */
 
 .content{
-    max-width: 78.125rem;
+    max-width: 78rem;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     justify-content: space-between;
-    /* column-gap: minmax(1.5rem, 10%); */
     grid-template-areas: 
     "main_content . sidebar";
-    grid-template-columns: minmax(45rem, 50rem) minmax(1.5rem, 8rem) minmax(17.5rem, 20rem); 
+    grid-template-columns: 50rem minmax(2rem, 8rem) 20rem; 
 }
 .main_content{
     grid-area: main_content;
@@ -620,10 +625,12 @@ footer{
     background: #282828;
     color: #FFFFFF;
 }
-
+.servicebar_wrapper{
+    width: 100%;
+}
 .servicebar{
     display: flex;
-    max-width: 78.125rem;
+    max-width: 78rem;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
@@ -641,7 +648,7 @@ footer{
     fill: white;
 }
 .service_link_list{
-    max-width: 78.125rem;
+    max-width: 78rem;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -657,7 +664,9 @@ footer .styled_link{
 
 
 .global_footer{
-    max-width: 78.125rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 78rem;
     line-height: 1rem;
     padding: 1rem 0;
     background: #282828;
@@ -670,7 +679,7 @@ footer .styled_link{
 }
 
 .stack_wrapper{
-    max-width: 78.125rem;
+    max-width: 78rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -749,14 +758,6 @@ footer .styled_link{
 
 
 
-.global_nav{
-    display: flex;
-    max-width: 78.125rem;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-}
 
 #health_down, #ena_down, #stories_down{
     display: none;
@@ -769,25 +770,30 @@ footer .styled_link{
   }
 
 @media (max-width:80rem){
-    #culture{
-        display:none;
-    }
     .content{
-        /* column-gap: 1rem; */
         margin-left: 2rem;
         margin-right: 2rem;
     }
 }
 
+@media (max-width:78rem){
+    .global_nav_wrapper{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:76rem){
+    .content{
+        grid-template-columns: minmax(45rem, 50rem) 2rem minmax(17.5rem, 20rem); 
+    }
+}
 
 @media (max-width:72.85rem){
-    #future{
+    #culture{
         display:none;
     }
     
-    .sidebar{
-        margin-left: 2rem;
-    }
 }
 
 @media (max-width:67.25rem){
@@ -808,12 +814,12 @@ footer .styled_link{
         display: block;
     }
     .content{
-
         grid-template-areas: 
         "main_content"
         "sidebar";
         grid-template-columns: 1fr;
     }
+
 
 }
 
@@ -821,10 +827,7 @@ footer .styled_link{
     #travel{
         display: none;
     }
-    .content{
-        margin-right: 2rem;
-    }
-    
+  
 
 }
 
