@@ -12,235 +12,276 @@
 </head>
 <body>
 <header class="header">
-    <div class="global_nav_wrapper">
-        <nav class="global_nav">
-            <div class="brand">
-                <a class="navbar_brand" href="https://www.bbc.com">
-                    <img src="bbc_logo.svg" alt="BBC Logo">
-                </a>
-             </div>
+    
+        <div class="global_nav_wrapper">
+            <nav class="global_nav">
+                <div class="brand">
+                    <a class="navbar_brand" href="https://www.bbc.com">
+                        <img src="./img/bbc_logo.svg" alt="BBC Logo">
+                    </a>
+                </div>
 
-             <div class="collapse_navbar">
-                <ul class="styled_nav">
+                <div class="collapse_navbar">
+                    <ul class="styled_nav">
 
-                    <li class="styled_item">
-                        <a class="styled_link" id="sign_in" href="#">
-                            <img src="sign_in.svg" alt="BBC Logo">
-                            <span class="styled_text">Sing in</span>
-                        </a>
+                        <li class="styled_item">
+                            <a class="styled_link" id="sign_in_up" href="#">
+                                <img src="./img/sign_in.svg" alt="Sign in">
+                                <span class="styled_text">Sing in</span>
+                            </a>
+                        </li>
+                        <li class="styled_item">
+                            <a class="styled_link" id="home_global_up" href="#">
+                                <span class="styled_text">Home</span>
+                            </a>
+                        </li>
+                        <li class="styled_item">
+                            <a class="styled_link" id="news_up" href="#">
+                                <span class="styled_text">News</span>
+                            </a>
+                        </li>
+                        <li class="styled_item">
+                            <a class="styled_link" id="sport_up" href="#">
+                                <span class="styled_text">Sport</span>
+                            </a>
+                        </li>
+                        <li class="styled_item">
+                            <a class="styled_link" id="reel_up" href="#">
+                                <span class="styled_text">Reel</span>
+                            </a>
+                        </li>
+                        <li class="styled_item">
+                            <a class="styled_link" id="worklife_up" href="#">
+                                <span class="styled_text">Worklife</span>
+                            </a>
+                        </li>
+                        <li class="styled_item">
+                            <a class="styled_link" id="travel_up" href="#">
+                                <span class="styled_text">Travel</span>
+                            </a>
+                        </li>
+                        <li class="styled_item">
+                            <a class="styled_link" id="future_up" href="#">
+                                <span class="styled_text">Future</span>
+                            </a>
+                        </li>
+                        <li class="styled_item">
+                            <a class="styled_link" id="culture_up" href="#">
+                                <span class="styled_text">Culture</span>
+                            </a>
+                        </li>
+                        <li class="dropdown styled_item">
+                            <a class="dropdown_toggle styled_link" id="more" onclick="showMore('show_more_global')">
+                                <span class="styled_text">More <i class="fas fa-caret-down"></i></span>
+                            </a>
+                        </li>
+                        <li class="styled_item">
+                            <a class="styled_link" id="search" href="#">
+                                
+                                <span class="styled_text">
+                                    <span class="search_icon"><i class="fas fa-search"></i></span>
+                                    <span id="search_text">Search</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </nav>
+        </div>
+        <div id="show_more_global">
+            <div class="show_more_wrapper">
+                <ul class="more_global_link_list">
+                    <li class="more_list_item" id="home_global_down">
+                        <a href="" >Home</a>
                     </li>
-                    <li class="styled_item">
-                        <a class="styled_link" id="home" href="#">
-                            <span class="styled_text">Home</span>
-                        </a>
+                    <li class="more_list_item" id="news_down">
+                        <a href="">News</a>
                     </li>
-                    <li class="styled_item">
-                        <a class="styled_link" id="news" href="#">
-                            <span class="styled_text">News</span>
-                        </a>
+                    <li class="more_list_item" id="sport_down">
+                        <a href="">Sport</a>
                     </li>
-                    <li class="styled_item">
-                        <a class="styled_link" id="sport" href="#">
-                            <span class="styled_text">Sport</span>
-                        </a>
+                    <li class="more_list_item" id="reel_down">
+                        <a href="">Reel</a>
                     </li>
-                    <li class="styled_item">
-                        <a class="styled_link" id="reel" href="#">
-                            <span class="styled_text">Reel</span>
-                        </a>
+                    <li class="more_list_item" id="worklife_down">
+                        <a href="">Worklife</a>
                     </li>
-                    <li class="styled_item">
-                        <a class="styled_link" id="worklife" href="#">
-                            <span class="styled_text">Worklife</span>
-                        </a>
+                    <li class="more_list_item" id="travel_down">
+                        <a href="">Travel</a>
                     </li>
-                    <li class="styled_item">
-                        <a class="styled_link" id="travel" href="#">
-                            <span class="styled_text">Travel</span>
-                        </a>
+                    <li class="more_list_item" id="future_down">
+                        <a href="">Future</a>
                     </li>
-                    <li class="styled_item">
-                        <a class="styled_link" id="future" href="#">
-                            <span class="styled_text">Future</span>
-                        </a>
+                    <li class="more_list_item" id="culture_down">
+                        <a href="">Culture</a>
                     </li>
-                    <li class="styled_item">
-                        <a class="styled_link" id="culture" href="#">
-                            <span class="styled_text">Culture</span>
-                        </a>
+                    <li class="more_list_item">
+                        <a href="">Music</a>
                     </li>
-                    <li class="dropdown styled_item">
-                        <a class="dropdown_toggle styled_link" href="#" id="more">
-                        <span class="styled_text">More</span>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="more">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <li class="more_list_item">
+                        <a href="">TV</a>
                     </li>
-                    <li class="styled_item">
-                        <a class="styled_link" id="search" href="#">
-                            
-                            <span class="styled_text">
-                                <span class="search_icon"><i class="fas fa-search"></i></span>
-                                <span id="search_text">Search</span>
-                            </span>
-                        </a>
+                    <li class="more_list_item">
+                        <a href="">Weather</a>
+                    </li>
+                    <li class="more_list_item">
+                        <a href="">Sounds</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </div>
-    <div class="local_nav">
-        <div class="news_header">
-            <div class="news_header_wrapper">
-                <a href="#">
-                    <img class="news_img" src="news_logo.svg" alt="News">
-                </a>
-                <div class="more_container" id="more_container_id_header">
-                    <ul class="styled_nav">
-                        <li class="styled_item">
-                            <a class="styled_link" onclick="showMore()">
-                                <span class="styled_text more_button"><i class="fas fa-grip-lines"></i>More</span>
-                            </a>
-                        </li>
-                     </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="mainnav">
-                <nav class="styled_nav">
-                    <div class="mainnav_container">
-           
-                        <div class="collapse_navbar" id="navbarTogglerDemo02">
+        </div>
+        <div class="local_nav_wrapper">
+            <div class="local_nav">
+                <div class="news_header">
+                    <div class="news_header_wrapper">
+                        <a href="#">
+                            <img class="news_img" src="./img/news_logo.svg" alt="News">
+                        </a>
+                        <div class="more_container" id="more_container_id_header">
                             <ul class="styled_nav">
-            
-                                <li class="styled_item" id="home_up">
-                                    <a class="styled_link" href="#">
-                                        <span class="styled_text first_elem">Home</span>
-                                    </a>
-                                </li>
-                                <li class="styled_item" id="coronavirus_up">
-                                    <a class="styled_link" href="#">
-                                        <span class="styled_text">Coronavirus</span>
-                                    </a>
-                                </li>
-                                <li class="styled_item" id="video_up">
-                                    <a class="styled_link" href="#">
-                                        <span class="styled_text">Video</span>
-                                    </a>
-                                </li>
-                                <li class="styled_item" id="world_up">
-                                    <a class="styled_link" href="#">
-                                        <span class="styled_text">World</span>
-                                    </a>
-                                </li>
-                                <li class="styled_item" id="uk_up">
-                                    <a class="styled_link" href="#">
-                                        <span class="styled_text">UK</span>
-                                    </a>
-                                </li>
-                                <li class="styled_item" id="business_up">
-                                    <a class="styled_link" href="#">
-                                        <span class="styled_text">Business</span>
-                                    </a>
-                                </li>
-                                <li class="styled_item" id="tech_up">
-                                    <a class="styled_link" href="#">
-                                        <span class="styled_text">Tech</span>
-                                    </a>
-                                </li>
-                                <li class="styled_item" id="scince_up">
-                                    <a class="styled_link" href="#">
-                                        <span class="styled_text">Scince</span>
-                                    </a>
-                                </li>
-                                <li class="styled_item" id="stories_up">
-                                    <a class="styled_link" href="#">
-                                        <span class="styled_text">Stories</span>
-                                    </a>
-                                </li>
-                                <li class="styled_item" id="ena_up">
-                                    <a class="styled_link" href="#">
-                                        <span class="styled_text">Entertainment & Arts</span>
-                                    </a>
-                                </li>
-                                <li class="styled_item" id="health_up">
-                                    <a class="styled_link" href="#">
-                                        <span class="styled_text">Health</span>
+                                <li class="styled_item">
+                                    <a class="styled_link" onclick="showMore('show_more')">
+                                        <span class="styled_text more_button" id="more_button_text_header"><i class="fas fa-grip-lines"></i>More</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="more_container" id="more_container_id">
-                        <ul class="styled_nav">
-                            <li class="styled_item">
-                                <a class="styled_link" onclick="showMore()">
-                                    <span class="styled_text more_button"><i class="fas fa-grip-lines"></i>More</span>
-                                </a>
-                            </li>
-                         </ul>
+                    <hr>
+                    <div class="mainnav">
+                        <nav class="styled_nav">
+                            <div class="mainnav_container">
+                
+                                <div class="collapse_navbar" id="navbarTogglerDemo02">
+                                    <ul class="styled_nav">
+                    
+                                        <li class="styled_item" id="home_up">
+                                            <a class="styled_link" href="#">
+                                                <span class="styled_text first_elem">Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="styled_item" id="coronavirus_up">
+                                            <a class="styled_link" href="#">
+                                                <span class="styled_text">Coronavirus</span>
+                                            </a>
+                                        </li>
+                                        <li class="styled_item" id="video_up">
+                                            <a class="styled_link" href="#">
+                                                <span class="styled_text">Video</span>
+                                            </a>
+                                        </li>
+                                        <li class="styled_item" id="world_up">
+                                            <a class="styled_link" href="#">
+                                                <span class="styled_text">World</span>
+                                            </a>
+                                        </li>
+                                        <li class="styled_item" id="uk_up">
+                                            <a class="styled_link" href="#">
+                                                <span class="styled_text">UK</span>
+                                            </a>
+                                        </li>
+                                        <li class="styled_item" id="business_up">
+                                            <a class="styled_link" href="#">
+                                                <span class="styled_text">Business</span>
+                                            </a>
+                                        </li>
+                                        <li class="styled_item" id="tech_up">
+                                            <a class="styled_link" href="#">
+                                                <span class="styled_text">Tech</span>
+                                            </a>
+                                        </li>
+                                        <li class="styled_item" id="scince_up">
+                                            <a class="styled_link" href="#">
+                                                <span class="styled_text">Scince</span>
+                                            </a>
+                                        </li>
+                                        <li class="styled_item" id="stories_up">
+                                            <a class="styled_link" href="#">
+                                                <span class="styled_text">Stories</span>
+                                            </a>
+                                        </li>
+                                        <li class="styled_item" id="ena_up">
+                                            <a class="styled_link" href="#">
+                                                <span class="styled_text">Entertainment & Arts</span>
+                                            </a>
+                                        </li>
+                                        <li class="styled_item" id="health_up">
+                                            <a class="styled_link" href="#">
+                                                <span class="styled_text">Health</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="more_container" id="more_container_id">
+                                <ul class="styled_nav">
+                                    <li class="styled_item">
+                                        <a class="styled_link" onclick="showMore('show_more')">
+                                            <span class="more_button" id="more_button_text"><i class="fas fa-grip-lines"></i>More</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </nav>
                     </div>
-
-                </nav>
-            </div>
-            
-        </div>
-    </div>
-    <div id="show_more">
-        <div class="show_more_wrapper">
-            <ul class="more_link_list">
-                <li class="more_list_item">
-                    <a href="">World News TV</a>
-                </li>
-                <li class="more_list_item">
-                    <a href="">In Pictures</a>
-                </li>
-                <li class="more_list_item">
-                    <a href="">Reality Check</a>
-                </li>
-                <li class="more_list_item">
-                    <a href="">Newsbeat</a>
-                </li>
-                <li class="more_list_item">
-                    <a href="">Long Reads</a>
-                </li>
-                <li class="more_list_item" id="health_down">
-                    <a href="">Health</a>
-                </li>
-                <li class="more_list_item" id="ena_down">
-                    <a href="">Entertainment & Arts</a>
-                </li>
-                <li class="more_list_item" id="stories_down">
-                    <a href="">Stories</a>
-                </li>
-            </ul>
-         </div>
-    </div>
-
-    <div class="sub_mainnav">
-        <nav class="styled_nav">
-            <div class="sub_mainnav_container">
-                <div class="collapse_navbar">
-                    <ul class="styled_nav">
-                        <li class="styled_item">
-                            <a class="styled_link" href="#">
-                                <span class="styled_text first_elem">Health</span>
-                            </a>
-                        </li>
-                        <li class="styled_item">
-                            <a class="styled_link" href="#">
-                                <span class="styled_text">Coronavirus</span>
-                            </a>
-                        </li>
-                    </ul>
+                    
                 </div>
             </div>
-        </nav>
-    </div>
+        </div>
+        <div id="show_more">
+            <div class="show_more_wrapper">
+                <ul class="more_link_list">
+                    <li class="more_list_item">
+                        <a href="">World News TV</a>
+                    </li>
+                    <li class="more_list_item">
+                        <a href="">In Pictures</a>
+                    </li>
+                    <li class="more_list_item">
+                        <a href="">Reality Check</a>
+                    </li>
+                    <li class="more_list_item">
+                        <a href="">Newsbeat</a>
+                    </li>
+                    <li class="more_list_item">
+                        <a href="">Long Reads</a>
+                    </li>
+                    <li class="more_list_item" id="health_down">
+                        <a href="">Health</a>
+                    </li>
+                    <li class="more_list_item" id="ena_down">
+                        <a href="">Entertainment & Arts</a>
+                    </li>
+                    <li class="more_list_item" id="stories_down">
+                        <a href="">Stories</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="sub_mainnav">
+            <nav class="styled_nav">
+                <div class="sub_mainnav_container">
+                    <div class="collapse_navbar">
+                        <ul class="styled_nav">
+                            <li class="styled_item">
+                                <a class="styled_link" href="#">
+                                    <span class="styled_text first_elem">Health</span>
+                                </a>
+                            </li>
+                            <li class="styled_item">
+                                <a class="styled_link" href="#">
+                                    <span class="styled_text">Coronavirus</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+ 
 
 
 
@@ -679,49 +720,54 @@
         <div class="section_header">
             <p>Top Stories</p>
         </div>
-        <ul>
-            <li class="promo_item">
-                <p class="promo_headline">
-                    <a href="/news/health-54873105" class="promo_link">
-                        <span>Germany under tougher restrictions amid Covid rise</span>
-                    </a>
-                </p>
-                <p>The country closes schools and non-essential businesses in an attempt to curb the virus.</p>
-                <div>
-                    <span class="metadata_snippet">
-                        <span><i class="far fa-clock"></i> 15 minutes ago</span>
-                    </span>
-                </div>
-            </li>
-            <li class="promo_item">
-                <p class="promo_headline">
-                    <a href="/news/health-54873105" class="promo_link">
-                        <span>MacKenzie Scott gives away $4.2bn in four months</span>
-                    </a>
-                </p>
-                <div>
-                    <span class="metadata_snippet">
-                        <span><i class="far fa-clock"></i> 3 hours ago</span>
-                    </span>
-                </div>
-            </li>
-            <li class="promo_item">
-                <p class="promo_headline">
-                    <a href="/news/health-54873105" class="promo_link">
-                        <span>Top Trump ally ends silence to congratulate Biden</span>
-                    </a>
-                </p>
-                <div>
-                    <span class="metadata_snippet">
-                        <span><i class="far fa-clock"></i> 9 hours ago</span>
-                    </span>
-                </div>
-            </li>
-        </ul> 
+        <div class="top_stories">
+            
+            <ul>
+                <li class="promo_item">
+                    <p class="promo_headline">
+                        <a href="/news/health-54873105" class="promo_link">
+                            <span>Germany under tougher restrictions amid Covid rise</span>
+                        </a>
+                    </p>
+                    <p>The country closes schools and non-essential businesses in an attempt to curb the virus.</p>
+                    <div>
+                        <span class="metadata_snippet">
+                            <span><i class="far fa-clock"></i> 15 minutes ago</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="promo_item">
+                    <p class="promo_headline">
+                        <a href="/news/health-54873105" class="promo_link">
+                            <span>MacKenzie Scott gives away $4.2bn in four months</span>
+                        </a>
+                    </p>
+                    <div>
+                        <span class="metadata_snippet">
+                            <span><i class="far fa-clock"></i> 3 hours ago</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="promo_item">
+                    <p class="promo_headline">
+                        <a href="/news/health-54873105" class="promo_link">
+                            <span>Top Trump ally ends silence to congratulate Biden</span>
+                        </a>
+                    </p>
+                    <div>
+                        <span class="metadata_snippet">
+                            <span><i class="far fa-clock"></i> 9 hours ago</span>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div> 
         <hr> 
         <div class="section_header">
             <p>Features</p>
-        </div>  
+        </div> 
+        <div class="features">
+             
             <ul>
                 <li class="promo_item">
                     <div class="promo">
@@ -790,99 +836,102 @@
                     </div>
                 </li>
             </ul>
-            <hr> 
+        </div>
+            <hr>
             <div class="section_header">
                 <p>Elsewhere on the BBC</p>
-            </div>  
-            <ul>
-                <li class="promo_item">
-                    <div class="promo">
-                        <div class="promo_portrait">
-                            <div class="promo_image_container">
-                                <div class="css-jusods-PromoImageContainerInner ehnfhlg1">
-                                    <span class="placeholder">
-                                        <span>
-                                            <img alt="Michael Stipe, Jimmi Hendrix and Taylor Swift - lyrics quiz image" src="./img/102501987_lyrics-quiz.jpg" width="317" height="178" class="image">
+            </div> 
+            <div class="elsewere">
+                  
+                <ul>
+                    <li class="promo_item">
+                        <div class="promo">
+                            <div class="promo_portrait">
+                                <div class="promo_image_container">
+                                    <div class="css-jusods-PromoImageContainerInner ehnfhlg1">
+                                        <span class="placeholder">
+                                            <span>
+                                                <img alt="Michael Stipe, Jimmi Hendrix and Taylor Swift - lyrics quiz image" src="./img/102501987_lyrics-quiz.jpg" width="317" height="178" class="image">
+                                            </span>
                                         </span>
-                                    </span>
+                                    </div>
+                                </div>
+                                <div class="promo_content">
+                                    <p class="promo_headline">
+                                        <a href="https://bbc.com/news/world-europe-55267992" class="promo_link">
+                                            <span>Lyrics quiz</span>
+                                        </a>
+                                    </p>
+                                    <p>Have you been getting these songs wrong?</p>
                                 </div>
                             </div>
-                            <div class="promo_content">
-                                <p class="promo_headline">
-                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link">
-                                        <span>Lyrics quiz</span>
-                                    </a>
-                                </p>
-                                <p>Have you been getting these songs wrong?</p>
-                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
             <hr> 
             <div class="section_header">
                 <p>Most Read</p>
-            </div>  
-            <ul>
-                <li class="promo_item">
-                    <div class="promo">
-                        <div class="promo_portrait">
-                            <div class="promo_content">
-                                <p class="promo_headline">
-                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
-                                        <span>Tom Cruise: Recording emerges of star 'shouting at film crew' over Covid</span><span class="rank">1</span>
+            </div>
+            <div class="most_read"></div>
+                  
+                <ul>
+                    <li class="promo_item">
+                        <div class="promo">
+                            <div class="promo_portrait">
+                                <div class="promo_content">
+                                    <p class="promo_headline">
+                                        <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
+                                            <span>Tom Cruise: Recording emerges of star 'shouting at film crew' over Covid</span><span class="rank">1</span>
+                                            
+                                        </a>
                                         
-                                    </a>
-                                    
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="promo_item">
-                    <div class="promo">
-                        <div class="promo_portrait">
-                            <div class="promo_content">
-                                <p class="promo_headline">
-                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
-                                        <span>MacKenzie Scott gives away $4.2bn in four months</span><span class="rank">2</span>
-                                    </a>
-                                </p>
+                    </li>
+                    <li class="promo_item">
+                        <div class="promo">
+                            <div class="promo_portrait">
+                                <div class="promo_content">
+                                    <p class="promo_headline">
+                                        <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
+                                            <span>MacKenzie Scott gives away $4.2bn in four months</span><span class="rank">2</span>
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="promo_item">
-                    <div class="promo">
-                        <div class="promo_portrait">
-                            <div class="promo_content">
-                                <p class="promo_headline">
-                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
-                                        <span>Paris mayor mocks 'absurd' fine for hiring too many women</span><span class="rank">3</span>
-                                    </a>
-                                </p>
+                    </li>
+                    <li class="promo_item">
+                        <div class="promo">
+                            <div class="promo_portrait">
+                                <div class="promo_content">
+                                    <p class="promo_headline">
+                                        <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
+                                            <span>Paris mayor mocks 'absurd' fine for hiring too many women</span><span class="rank">3</span>
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="promo_item">
-                    <div class="promo">
-                        <div class="promo_portrait">
-                            <div class="promo_content">
-                                <p class="promo_headline">
-                                    <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
-                                        <span>Brexit: 'Narrow path' in view for trade deal - EU chief</span><span class="rank">4</span>
-                                    </a>
-                                </p>
+                    </li>
+                    <li class="promo_item">
+                        <div class="promo">
+                            <div class="promo_portrait">
+                                <div class="promo_content">
+                                    <p class="promo_headline">
+                                        <a href="https://bbc.com/news/world-europe-55267992" class="promo_link ranked">
+                                            <span>Brexit: 'Narrow path' in view for trade deal - EU chief</span><span class="rank">4</span>
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-
-
-
-
+                    </li>
+                </ul>
+            </div> 
     </div>
 </div>
 
@@ -1032,6 +1081,32 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- POP-UP FORM -->
+                <div>
+                    <button class="open-button" onclick="openForm()">Подпишитесь</button>
+                    <div class="form-popup" id="myForm">
+                        <form action="./send.php" class="form-container" method="POST">
+                          <h1>Подписаться</h1>
+                          <label for="name"><b>Имя</b></label>
+                          <input type="text" placeholder="Ваше имя" name="name" required>
+                          <label for="email"><b>Е-мейл</b></label>
+                          <input type="email" placeholder="Ваш е-мейл" name="email" required>
+                          <button type="submit" class="btn">Отправить</button>
+                          <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+                        </form>
+                      </div>
+                    <script>
+                        function openForm() {
+                            document.getElementById("myForm").style.display = "block";
+                        }
+
+                        function closeForm() {
+                            document.getElementById("myForm").style.display = "none";
+                        }
+                    </script>
+                </div>
+
                 <p>© 2020 BBC. The BBC is not responsible for the content of external sites. 
                     <a href="https://www.bbc.co.uk/help/web/links/" class="rights_link">Read about our approach to external linking.</a>
                 </p>
@@ -1041,18 +1116,53 @@
 </footer>
 
     <script>
-    function showMore() {
-        if (document.getElementById('show_more').style.display == 'none'){
-            document.getElementById('show_more').style.display = 'block';
+    function showMore(id) {
+        if (document.getElementById(id).style.display == 'none'){
 
-            var element = document.getElementById("more_container_id");
-            element.classList.remove("more_container");
-            element.classList.add("more_container_active");
+            document.getElementById(id).style.display = 'block';
+
+            if (id == 'show_more'){
+            let moreContainer = document.getElementById("more_container_id");
+            moreContainer.classList.remove("more_container");
+            moreContainer.classList.add("more_container_active");
+
+            let moreButton = document.getElementById("more_button_text");
+            moreButton.classList.remove("more_button");
+            moreButton.classList.add("more_button_active");
+
+            let moreContainerHeader = document.getElementById("more_container_id_header");
+            moreContainerHeader.classList.remove("more_container");
+            moreContainerHeader.classList.add("more_container_active");
+
+            let moreButtonHeader = document.getElementById("more_button_text_header");
+            moreButtonHeader.classList.remove("more_button");
+            moreButtonHeader.classList.add("more_button_active");
+            }
 
         } else {
-        document.getElementById('show_more').style.display = 'none';
+
+            document.getElementById(id).style.display = 'none';
+            if (id == 'show_more'){
+            let moreContainer = document.getElementById("more_container_id");
+            moreContainer.classList.remove("more_container_active");
+            moreContainer.classList.add("more_container");
+
+            let moreButton = document.getElementById("more_button_text");
+            moreButton.classList.remove("more_button_active");
+            moreButton.classList.add("more_button");
+
+            let moreContainerHeader = document.getElementById("more_container_id_header");
+            moreContainerHeader.classList.remove("more_container_active");
+            moreContainerHeader.classList.add("more_container");
+
+            let moreButtonheader = document.getElementById("more_button_text_header");
+            moreButtonheader.classList.remove("more_button_active");
+            moreButtonheader.classList.add("more_button");
+            }
          }
-    }
+      
+        } 
+
     </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
